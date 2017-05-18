@@ -1,0 +1,35 @@
+Link:
+Ripmat:  http://www.ripmat.it/piano.htm
+Simboli: https://en.wikipedia.org/wiki/List_of_mathematical_symbols
+Latex:   https://it.wikipedia.org/wiki/Aiuto:Formule_matematiche_TeX
+         http://data-blog.udacity.com/posts/2016/10/latex-primer/
+Markdown: http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Working%20With%20Markdown%20Cells.html
+
+
+Latex glossario:
+- In una cella markdown il latex in linea si scrive dentro $...$ mentre di blocco dentro $$...$$
+- Per andare a capo si usa \\ dentro un codice latex (oppure <br> dentro al markdown)
+- spazi \, \: \; \quad \qquad in ordine di lunghezza, nelle formule gli spazi vengono rimossi
+- {}     \left\{ \right\}      graffe
+- ∈      \in                   appartiene
+- N      \mathbb{N}            numeri naturali
+- ∅      \emptyset             insieme vuoto
+- x | y  \mid                  x divide y, x multiplo di y (una cosa divisibile per è anche multiplo di)
+- x ∤ y \nmid                 x non divide y, x non è multiplo y
+- x ⋮ y \vdots                x è divisibile per y (notazione russa) o y è multiplo di x 
+                               https://math.stackexchange.com/a/135385
+- x mod b = 0  \bmod           x è divisibile per b (cioè da modulo 0), altra notazione
+- x=y˙         \dot            x è un multiplo di y (col punto sopra) altra notazione antica,
+                               ma il punto sopra si usa anche per le serie infinite 
+                               https://math.stackexchange.com/q/331716
+- x² x2  x^2 x_2               elevazione o potenza & base
+- P(X)   \mathcal{P}(X)        potenza di un insieme, power set, Weierstrass p
+
+
+
+%%html
+<!-- allineamento a sinistra delle celle, con questo riesco a spostare 
+le tabelle del markdown a sinistra -->
+<style>
+table {float:left}
+</style>
