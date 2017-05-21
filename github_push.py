@@ -43,7 +43,7 @@ addr.insert(1, f"""//{nome}:{pswd}@""")
 addr = ''.join(addr) 
 
 ##faccio un pull perché continua a rompere i coglioni, nun funziona
-#pull = sh('git pull')
+pull = sh('git pull')
 
 #costretto ad aggiungere il force per disperazione
 output = sh(f"""git push {addr}""")
