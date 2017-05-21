@@ -24,6 +24,7 @@ Latex glossario:
                                https://math.stackexchange.com/q/331716
 - x² x2  x^2 x_2               elevazione o potenza & base
 - P(X)   \mathcal{P}(X)        potenza di un insieme, power set, Weierstrass p
+- B      $\overline{B}         per ottenere il complementare, si può innestare per la doppia negazione
 
 
 
