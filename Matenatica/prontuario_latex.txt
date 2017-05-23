@@ -10,9 +10,10 @@ Latex glossario:
 - In una cella markdown il latex in linea si scrive dentro $...$ mentre di blocco dentro $$...$$
 - Per andare a capo si usa \\ dentro un codice latex (oppure <br> dentro al markdown)
 - spazi \, \: \; \quad \qquad in ordine di lunghezza, nelle formule gli spazi vengono rimossi
-- {}     \left\{ \right\}      graffe
+- {}     \left\{ \right\}      graffe o anche solo \{ e \}
 - ∈      \in                   appartiene
 - N      \mathbb{N}            numeri naturali
+- testo  \texttt{testo}        testo non interpretato da latex
 - ∅      \emptyset             insieme vuoto
 - x | y  \mid                  x divide y, x multiplo di y (una cosa divisibile per è anche multiplo di)
 - x ∤ y \nmid                 x non divide y, x non è multiplo y
@@ -22,9 +23,29 @@ Latex glossario:
 - x=y˙         \dot            x è un multiplo di y (col punto sopra) altra notazione antica,
                                ma il punto sopra si usa anche per le serie infinite 
                                https://math.stackexchange.com/q/331716
-- x² x2  x^2 x_2               elevazione o potenza & base
+- x² x2  x^2 x_2 o x^{20 x_{20}elevazione & base
+- C1     C_1 o C_{10}          base                  
 - P(X)   \mathcal{P}(X)        potenza di un insieme, power set, Weierstrass p
-- B      $\overline{B}         per ottenere il complementare, si può innestare per la doppia negazione
+- B̅      $\overline{B}         per ottenere il complementare, si può innestare per la doppia negazione
+- A △ B  \triangle             differenza simmetrica fra insiemi
+- A ≠ B  \ne                   not equal
+- A x B  \times                prodotto cartesiano
+- ∪ ∩    \cup \cap             unione, intersezione, \bigcup e \bigcap sono i corrispettivi grossi
+
+
+
+
+
+
+
+
+from IPython.display import display, Math
+display(Math('stringa in latex'))
+
+stampare latex attraverso python
+sarà necessario backquotare due volte i caratteri speciali oppure specificare la stringa come r (raw) r'\texttt{questo \t non è un tab}'
+per inserire variabili attraverso il format sarà necessario raddoppiare tutte le graffe non catturate dal format f'\overline{{ {A} }}'
+si può mischiare raw e format rf'\texttt{{ {A} }}'
 
 
 
